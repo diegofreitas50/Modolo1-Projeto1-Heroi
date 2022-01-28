@@ -25,6 +25,7 @@ do{
         Para ajudar ao nosso guerreiro Cleitinho à compreender se ele será capaz de êxito nas batalhas, será necessário responder as seguintes 
     perguntas: `);
 
+    console.log();
     respostaHero = prompt('Cleitinho possui um kit GNV em seu carro, para poder obter lucro em suas viagens? Responta com "sim" ou "nao": ');
     console.clear();
 
@@ -103,15 +104,20 @@ do{
     console.clear(); 
 
     if(respostasSim == 5) {
-        console.log(`Você triunfa de maneira inquestionável e seus feitos serão lembrados por muitas gerações. completou ${respostasSim} desafios.\n\n`);
+        console.log(`
+        Impressionante! Cleitinho conseguiu sair vitorioso em todas as suas batalhas, assim sendo extremamente possível exterminar
+        todos os boletos que assolam a sua família, e quem sabe um dia (trabalhando umas 15 horas por dia), possa realizar seus sonhos.\n\n`);
     }else if(respostasSim == 4) {
-        console.log(`Depois de muito esforço você conquista seu objetivo, embora não de maneira perfeita. completou ${respostasSim} desafios.\n\n`);
+        console.log(`Muito bom, foi por pouco! Cleitinho precisa melhorar. Conseguiu derrotar os boletos, mas não por muito tempo\n\n`);
     }else if(respostasSim == 3) {
-        console.log(`Você chega perto de conseguir alcançar seu objetivo, mas acaba falhando por pouco. completou ${respostasSim} desafios.\n\n`);
+        console.log(`Assim fica difícil, Cleitinho conseguiu fugir de alguns boletos, mas lembre-se: ele volta mais poderoso e pode ser fatal.\n\n`);
     }else if(respostasSim == 0) {
-        console.log(`Você falha miseravelmente. completou ${respostasSim} desafios.`);
+        console.log(`
+        Assim não dá, Cleitinho foi parar no SPC e tá devendo à agiota. Coitado. O seu veículo foi apreendido pelo Pai de todos
+        os boletos: O temível Banco.`);
     }else 
-        console.log(`Você falha, mas ainda consegue fugir da situação. completou ${respostasSim} desafios.\n\n`);
+        console.log(`Decepcionante! Cleitinho está endividado mas ainda dá para reverter a situação, mas tem que fugir da polícia pois seu veículo
+        está com busca e apreensão por não ter vencido o boleto do financiamento e IPVA.\n\n`);
 
     playAgain = prompt('Deseja jogar novamente? Responda "sim" ou "nao": ');
     console.clear(); 
