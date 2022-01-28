@@ -1,5 +1,3 @@
-
-
 var prompt = require("prompt-sync")();
 
 let respostasSim = 0;
